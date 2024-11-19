@@ -14,7 +14,7 @@ function getUsers(){
         return response.json();
     })
     .then((data)=>{
-        data.foreEach((element)=>{
+        data.forEach((element)=>{
             html += `<li> ${element.title} ${element.description} </li>`
         })
         content.innerHTML = html
